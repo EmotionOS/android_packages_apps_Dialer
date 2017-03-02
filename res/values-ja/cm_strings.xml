@@ -91,5 +91,51 @@
   <!-- Text displayed when the list of incoming calls is empty -->
   <!-- Text displayed when the list of outgoing calls is empty -->
   <!-- Text displayed when the call log is empty. -->
+  <string name="recentCalls_empty">通話履歴はありません</string>
+  <string name="calllog_search_hint">通話履歴を検索</string>
+  <string name="no_call_log">通話履歴なし</string>
+  <string name="clear">消去</string>
+  <string name="description_clear_search">検索を消去</string>
+  <string name="video_call_welcome_title"><b>新しいビデオ通話アプリへようこそ</b></string>
+  <string name="video_call_welcome_message">電話で聞き慣れた声を聞くのも良いですが、お互いに顔を合わせて会話できたらもっと良いですよね！リアルタイム（またはFaceTime）接続のために必要な条件は次の通りです。\n 4G LTE または Wi-Fi 接続が必要です。\n 電話をかける相手の端末もビデオ通話に対応している必要があります。\n ビデオ通話は高速データ通信を使用します。\n 音声通話をビデオ通話に変更することもできます。\n\n 詳細は <a>https://support.t-mobile.com/docs/DOC-23574</a> を参照してください。</string>
+  <string name="video_call_welcome_message_repeat">このメッセージを毎回表示する</string>
+  <string name="toast_change_video_call_failed">ビデオ通話に変更できません。番号の形式が間違っています</string>
+  <string name="toast_make_video_call_failed">ビデオ通話の発信ができません。番号の形式が間違っています</string>
   <!-- Add for enhance videocall ui -->
+  <string name="overflowBothCallMenuItemText">ビデオ通話に自分を表示する</string>
+  <string name="overflowRXCallMenuItemText">ビデオ通話に自分を表示しない</string>
+  <string name="overflowVOCallMenuItemText">音声通話</string>
+  <string name="video_call">ビデオ通話</string>
+  <string name="call_data_info_label">通話/データ使用タイマー</string>
+  <string name="call_data_info_description">ビデオ通話とデータの使用時間です</string>
+  <string name="alert_call_over_wifi">Wi-Fi を使って発信します。</string>
+  <string name="alert_call_no_cellular_coverage">モバイルネットワークがありません。発信するには Wi-Fi に接続してください。</string>
+  <string name="alert_user_connect_to_wifi_for_call">発信するには Wi-Fi に接続してください。</string>
+  <string name="alert_user_connect_to_wifi_for_call_text">ここをタップすると利用可能なネットワークを表示します</string>
+  <string name="menu_add_to_4g_conference_call">4G グループ通話に追加する</string>
+  <string name="menu_4g_conference_call">4G グループ通話</string>
+  <!-- Title for incoming 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_volte">4G 音声通話着信</string>
+  <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_video_lte">4G ビデオ通話着信</string>
+  <!-- Title for outgoing 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_volte">4G 音声通話発信</string>
+  <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_video_lte">4G ビデオ通話発信</string>
+  <!-- Title for missed 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_volte">不在 4G 音声通話</string>
+  <!-- Title for missed 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_video_lte">不在 4G ビデオ通話</string>
+  <!-- Title for incoming wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_vowifi">Wi-Fi 音声通話着信</string>
+  <!-- Title for incoming wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_video_wifi">Wi-Fi ビデオ通話着信</string>
+  <!-- Title for outgoing wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_vowifi">Wi-Fi 音声通話発信</string>
+  <!-- Title for outgoing wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_video_wifi">Wi-Fi ビデオ通話発信</string>
+  <!-- Title for missed wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_vowifi">不在 Wi-Fi 音声通話</string>
+  <!-- Title for missed wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_video_wifi">不在 Wi-Fi ビデオ通話</string>
 </resources>
