@@ -75,4 +75,40 @@
   <!-- Text displayed when the list of outgoing calls is empty -->
   <!-- Text displayed when the call log is empty. -->
   <!-- Add for enhance videocall ui -->
+  <string name="overflowBothCallMenuItemText">Відеовиклик, показувати мене</string>
+  <string name="overflowRXCallMenuItemText">Відеовиклик, не показувати мене</string>
+  <string name="overflowVOCallMenuItemText">Голосовий виклик</string>
+  <string name="video_call">Відеовиклик</string>
+  <string name="call_data_info_label">Таймери використання викликів та даних</string>
+  <string name="call_data_info_description">Час використання голосового виклику та використання даних</string>
+  <string name="alert_call_over_wifi">Виклики будуть виконані через Wi-Fi.</string>
+  <string name="alert_call_no_cellular_coverage">Відсутня стільникова мережа. Для здійснення дзвінків під\'єднайтеся до доступного Wi-Fi.</string>
+  <string name="alert_user_connect_to_wifi_for_call">Підключіться до Wi-Fi, щоб здійснювати виклики.</string>
+  <string name="alert_user_connect_to_wifi_for_call_text">Натисніть тут для перегляду доступних мереж</string>
+  <string name="menu_add_to_4g_conference_call">Додати до 4G виклик-конференції</string>
+  <string name="menu_4g_conference_call">4G виклик-конференція</string>
+  <!-- Title for incoming 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_volte">Вхідний 4G голосовий виклик</string>
+  <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_video_lte">Вхідний 4G відео виклик</string>
+  <!-- Title for outgoing 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_volte">Вихідний 4G голосовий виклик</string>
+  <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_video_lte">Вихідний 4G відео виклик</string>
+  <!-- Title for missed 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_volte">Пропущений 4G голосовий виклик</string>
+  <!-- Title for missed 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_video_lte">Пропущений 4G відео виклик</string>
+  <!-- Title for incoming wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_vowifi">Вхідний Wi-Fi голосовий виклик</string>
+  <!-- Title for incoming wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_video_wifi">Вхідний Wi-Fi відеовиклик</string>
+  <!-- Title for outgoing wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_vowifi">Вихідний Wi-Fi голосовий виклик</string>
+  <!-- Title for outgoing wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_video_wifi">Вихідний Wi-Fi відеовиклик</string>
+  <!-- Title for missed wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_vowifi">Пропущений Wi-Fi голосовий виклик</string>
+  <!-- Title for missed wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_video_wifi">Пропущений Wi-Fi відеовиклик</string>
 </resources>
