@@ -38,6 +38,8 @@ import com.android.incallui.InCallPresenter.InCallStateListener;
 
 import cyanogenmod.providers.CMSettings;
 
+import org.cyanogenmod.platform.internal.R;
+
 /**
  * Class manages the proximity sensor for the in-call UI.
  * We enable the proximity sensor while the user in a phone call. The Proximity sensor turns off
@@ -68,6 +70,8 @@ public class ProximitySensor implements AccelerometerListener.OrientationListene
     private int mProxSpeakerDelay = 100;
     private boolean mDialpadVisible;
     private Context mContext;
+    private boolean mProximityWakeSupported;
+    private int mProximityWakeDefault;
 
     private final Handler mHandler = new Handler();
     private final Runnable mActivateSpeaker = new Runnable() {
@@ -108,6 +112,11 @@ public class ProximitySensor implements AccelerometerListener.OrientationListene
 
         mAudioModeProvider = audioModeProvider;
         mAudioModeProvider.addListener(this);
+
+        mProximityWakeSupported = context.getResources().getBoolean(
+                R.bool.config_proximityCheckOnWake);
+        mProximityWakeDefault = context.getResources().getBoolean(
+                R.bool.config_proximityCheckOnWakeEnabledByDefault) ? 1 : 0;
     }
 
     public void tearDown() {
@@ -332,8 +341,9 @@ public class ProximitySensor implements AccelerometerListener.OrientationListene
                     .add("aud", CallAudioState.audioRouteToString(audioMode))
                     .toString());
 
-            final boolean proximityOnWake = CMSettings.System.getInt(mContext.getContentResolver(),
-                    CMSettings.System.PROXIMITY_ON_WAKE, 1) == 1;
+            final boolean proximityOnWake = mProximityWakeSupported &&
+                    CMSettings.System.getInt(mContext.getContentResolver(),
+                            CMSettings.System.PROXIMITY_ON_WAKE, mProximityWakeDefault) == 1;
 
             if ((mIsPhoneOffhook || (mHasIncomingCall && proximityOnWake))
                     && !screenOnImmediately) {
