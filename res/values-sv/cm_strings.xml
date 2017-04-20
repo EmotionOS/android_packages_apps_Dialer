@@ -89,6 +89,10 @@
   <!-- Text displayed when the list of incoming calls is empty -->
   <!-- Text displayed when the list of outgoing calls is empty -->
   <!-- Text displayed when the call log is empty. -->
+  <string name="recentCalls_empty">Samtalsloggen är tom</string>
+  <string name="calllog_search_hint">Sök i samtalslogg</string>
+  <string name="no_call_log">Ingen samtalslogg</string>
   <string name="clear">Rensa</string>
+  <string name="description_clear_search">Rensa sökning</string>
   <!-- Add for enhance videocall ui -->
 </resources>
